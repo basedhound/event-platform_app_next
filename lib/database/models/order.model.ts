@@ -1,5 +1,6 @@
 import { Schema, model, models, Document } from 'mongoose'
 
+// TypeScript
 export interface IOrder extends Document {
   createdAt: Date
   stripeId: string

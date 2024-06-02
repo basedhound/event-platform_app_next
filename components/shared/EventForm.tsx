@@ -1,6 +1,14 @@
-import React from 'react'
+"use client"
 
-const EventForm = () => {
+// TypeScript
+type EventFormProps = {
+  userId: string
+  type: "Create" | "Update"
+  // event?: IEvent,
+  // eventId?: string
+}
+
+const EventForm = ({ userId, type, /* event, eventId */ }: EventFormProps) => {
   return (
     <div>EventForm</div>
   )

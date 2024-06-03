@@ -8,10 +8,10 @@
 </div>
 
 ## 📋 Table of Contents
-- [✨ Introduction](#-introduction)
-- [⚙️ Tech Stack](#️-tech-stack)
-- [📝 Features](#-features)
-- [🚀 Quick Start](#-quick-start)
+- ✨ [Introduction](#-introduction)
+- ⚙️ [Tech Stack](#️-tech-stack)
+- 📝 [Features](#-features)
+- 🚀 [Quick Start](#-quick-start)
 
 ## <a name="introduction">✨ Introduction</a>
 

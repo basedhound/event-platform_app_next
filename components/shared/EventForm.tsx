@@ -28,17 +28,18 @@ import { eventDefaultValues } from "@/constants";
 import { eventFormSchema } from "@/lib/validator";
 import { useUploadThing } from "@/lib/uploadthing";
 import { createEvent } from "@/lib/actions/event.actions";
+import { IEvent } from "@/lib/database/models/event.model"
 
 // TypeScript
 type EventFormProps = {
   userId: string;
   type: "Create" | "Update";
-  // event?: IEvent,
+  event?: IEvent,
   eventId?: string
 };
 
 //!
-const EventForm = ({ userId, type, /* event, */ eventId }: EventFormProps) => {
+const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
   // Variables
   const initialValues = eventDefaultValues;
   const router = useRouter();

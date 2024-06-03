@@ -70,8 +70,8 @@ Make sure you have the following installed on your machine:
 **Cloning the Repository**
 
 ```bash
-git clone https://github.com/your-username/your-project.git
-cd your-project
+git clone https://github.com/basedhound/meetup-clone_app_next.git
+cd meetup-clone_app_next
 ```
 
 **Installation**
@@ -97,8 +97,6 @@ NEXT_CLERK_WEBHOOK_SECRET=
 
 NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
 NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/
 
 #MONGODB
 MONGODB_URI=

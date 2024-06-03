@@ -7,7 +7,7 @@ import { generateClientDropzoneAccept } from 'uploadthing/client'
 import { Button } from '@/components/ui/button'
 import { convertFileToUrl } from '@/lib/utils'
 
-// TypeScript
+// TypeScript for Props
 type FileUploaderProps = {
   onFieldChange: (url: string) => void
   imageUrl: string
@@ -15,14 +15,14 @@ type FileUploaderProps = {
 }
 
 //!
-export function FileUploader({ imageUrl, onFieldChange, setFiles }: FileUploaderProps) {
-  // Define onDrop handler
+export const FileUploader = ({ imageUrl, onFieldChange, setFiles }: FileUploaderProps) => {
+   // Define onDrop handler
   const onDrop = useCallback((acceptedFiles: File[]) => {
     setFiles(acceptedFiles)
     onFieldChange(convertFileToUrl(acceptedFiles[0]))
   }, [])
 
-  // Define Dropzone props
+  // https://docs.uploadthing.com/api-reference/react#usedropzone
   const { getRootProps, getInputProps } = useDropzone({
     onDrop,
     accept: 'image/*' ? generateClientDropzoneAccept(['image/*']) : undefined,
@@ -32,8 +32,10 @@ export function FileUploader({ imageUrl, onFieldChange, setFiles }: FileUploader
     <div
       {...getRootProps()}
       className="flex-center bg-dark-3 flex h-72 cursor-pointer flex-col overflow-hidden rounded-xl bg-grey-50">
+      {/* Input accepts images */}
       <input {...getInputProps()} className="cursor-pointer" />
 
+      {/* Display images */}
       {imageUrl ? (
         <div className="flex h-full w-full flex-1 justify-center ">
           <img

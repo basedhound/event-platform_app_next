@@ -1,11 +1,10 @@
 "use client";
 //
-import { SignedIn, SignedOut, useUser } from "@clerk/nextjs";
 import Link from "next/link";
+import { SignedIn, SignedOut, useUser } from "@clerk/nextjs";
 //
 import Checkout from "./Checkout";
 import { Button } from "../ui/button";
-//
 import { IEvent } from "@/lib/database/models/event.model";
 
 //!

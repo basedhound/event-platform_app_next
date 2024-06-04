@@ -14,6 +14,7 @@ const Search = ({ placeholder = 'Search title...' }: { placeholder?: string }) =
   const searchParams = useSearchParams();
 
   useEffect(() => {
+    // Wait 3s before new API call
     const delayDebounceFn = setTimeout(() => {
       let newUrl = '';
 

@@ -115,12 +115,13 @@ export async function getAllEvents({
   try {
     await connectToDatabase();
 
+    // Conditions
     const titleCondition = query
       ? { title: { $regex: query, $options: "i" } }
       : {};
     const categoryCondition = category
       ? await getCategoryByName(category)
-      : null;
+      : null;      
     const conditions = {
       $and: [
         titleCondition,
@@ -128,7 +129,8 @@ export async function getAllEvents({
       ],
     };
 
-    const skipAmount = (Number(page) - 1) * limit;
+    // Pagination
+    const skipAmount = (Number(page) - 1) * limit;   
     const eventsQuery = Event.find(conditions)
       .sort({ createdAt: "desc" })
       .skip(skipAmount)

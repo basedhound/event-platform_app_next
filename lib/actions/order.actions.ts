@@ -17,9 +17,11 @@ import {
 } from "@/types";
 import { handleError } from "../utils";
 
+// https://docs.stripe.com/checkout/quickstart?client=next
 export const checkoutOrder = async (order: CheckoutOrderParams) => {
+  // Create a new Stripe instance
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
-
+  // If not free, convert the price to cents for Stripe
   const price = order.isFree ? 0 : Number(order.price) * 100;
 
   try {

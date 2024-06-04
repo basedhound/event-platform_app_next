@@ -59,7 +59,14 @@ and many more, including code architecture and reusability
 
 Follow these steps to set up the project locally on your machine.
 
-**Prerequisites**
+**Dashboards**
+
+- https://cloud.mongodb.com
+- https://dashboard.clerk.com
+- https://uploadthing.com/dashboard
+- https://dashboard.stripe.com
+
+<br>**Prerequisites**
 
 Make sure you have the following installed on your machine:
 
@@ -67,14 +74,14 @@ Make sure you have the following installed on your machine:
 - [Node.js](https://nodejs.org/en)
 - [npm](https://www.npmjs.com/) (Node Package Manager)
 
-**Cloning the Repository**
+<br>**Cloning the Repository**
 
 ```bash
 git clone https://github.com/basedhound/meetup-clone_app_next.git
 cd meetup-clone_app_next
 ```
 
-**Installation**
+<br>**Installation**
 
 Install the project dependencies using npm:
 
@@ -82,7 +89,7 @@ Install the project dependencies using npm:
 npm install
 ```
 
-**Set Up Environment Variables**
+<br>**Set Up Environment Variables**
 
 Create a new file named `.env` in the root of your project and add the following content:
 
@@ -113,7 +120,7 @@ NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 
 Replace the placeholder values with your actual credentials 
 
-**Running the Project**
+<br>**Running the Project**
 
 ```bash
 npm start

@@ -10,10 +10,12 @@ import {
 import { formatDateTime } from "@/lib/utils";
 import { SearchParamProps } from "@/types";
 
+//!
 const EventDetails = async ({
   params: { id },
   searchParams,
 }: SearchParamProps) => {
+  // Fetch event by id
   const event = await getEventById(id);
 
   // Fetch related events by category
@@ -102,7 +104,7 @@ const EventDetails = async ({
         </div>
       </section>
 
-      {/* EVENTS with the same category */}
+      {/* RELATED EVENTS */}
       <section className="wrapper my-8 flex flex-col gap-8 md:gap-12">
         <h2 className="h2-bold">Related Events</h2>
 

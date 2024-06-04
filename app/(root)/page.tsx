@@ -11,6 +11,7 @@ import { SearchParamProps } from "@/types";
 
 //!
 export default async function Home({ searchParams }: SearchParamProps) {
+  // Get search params for Search
   const page = Number(searchParams?.page) || 1;
   const searchText = (searchParams?.query as string) || "";
   const category = (searchParams?.category as string) || "";

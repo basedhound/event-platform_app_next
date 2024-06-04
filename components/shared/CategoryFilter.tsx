@@ -21,16 +21,17 @@ const CategoryFilter = () => {
   const router = useRouter();
   const searchParams = useSearchParams();
 
+  // Fetch all categories
   useEffect(() => {
     const getCategories = async () => {
       const categoryList = await getAllCategories();
 
       categoryList && setCategories(categoryList as ICategory[])
     }
-
     getCategories();
   }, [])
 
+  
   const onSelectCategory = (category: string) => {
       let newUrl = '';
 

@@ -15,10 +15,12 @@ type PaginationProps = {
 const Pagination = ({ page, totalPages, urlParamName }: PaginationProps) => {
   const router = useRouter();
   const searchParams = useSearchParams();
-
+  
+  // Handle pagination
   const onClick = (btnType: string) => {
     const pageValue = btnType === "next" ? Number(page) + 1 : Number(page) - 1;
 
+    // Update URL
     const newUrl = formUrlQuery({
       params: searchParams.toString(),
       key: urlParamName || "page",

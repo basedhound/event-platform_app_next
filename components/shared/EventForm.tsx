@@ -27,26 +27,35 @@ import Dropdown from "./Dropdown";
 import { eventDefaultValues } from "@/constants";
 import { eventFormSchema } from "@/lib/validator";
 import { useUploadThing } from "@/lib/uploadthing";
-import { createEvent } from "@/lib/actions/event.actions";
-import { IEvent } from "@/lib/database/models/event.model"
+import { createEvent, updateEvent } from "@/lib/actions/event.actions";
+import { IEvent } from "@/lib/database/models/event.model";
 
 // TypeScript
 type EventFormProps = {
   userId: string;
   type: "Create" | "Update";
-  event?: IEvent,
-  eventId?: string
+  event?: IEvent;
+  eventId?: string;
 };
 
 //!
 const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
   // Variables
-  const initialValues = eventDefaultValues;
   const router = useRouter();
 
+  // Form initial values
+  const initialValues =
+    event && type === "Update"
+      ? {
+          ...event,
+          startDateTime: new Date(event.startDateTime),
+          endDateTime: new Date(event.endDateTime),
+        }
+      : eventDefaultValues;
+
   // FileUploader
-  const [files, setFiles] = useState<File[]>([]); 
-  const { startUpload } = useUploadThing('imageUploader') 
+  const [files, setFiles] = useState<File[]>([]);
+  const { startUpload } = useUploadThing("imageUploader");
 
   // Define form
   const form = useForm<z.infer<typeof eventFormSchema>>({
@@ -58,26 +67,26 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
   async function onSubmit(values: z.infer<typeof eventFormSchema>) {
     let uploadedImageUrl = values.imageUrl;
 
-    if(files.length > 0) {
-      const uploadedImages = await startUpload(files)
-      if(!uploadedImages) {
-        return
-      }      
-      uploadedImageUrl = uploadedImages[0].url 
+    if (files.length > 0) {
+      const uploadedImages = await startUpload(files);
+      if (!uploadedImages) {
+        return;
+      }
+      uploadedImageUrl = uploadedImages[0].url;
     }
 
     // if creating a NEW event
-    if(type === 'Create') {
+    if (type === "Create") {
       try {
         const newEvent = await createEvent({
           event: { ...values, imageUrl: uploadedImageUrl },
           userId,
-          path: '/profile'
-        })
+          path: "/profile",
+        });
 
-        if(newEvent) {
+        if (newEvent) {
           form.reset();
-          router.push(`/events/${newEvent._id}`)
+          router.push(`/events/${newEvent._id}`);
         }
       } catch (error) {
         console.log(error);
@@ -85,9 +94,9 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
     }
 
     // if updating an existing event
-/*     if(type === 'Update') {
-      if(!eventId) {
-        router.back()
+    if (type === "Update") {
+      if (!eventId) {
+        router.back();
         return;
       }
 
@@ -95,17 +104,17 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
         const updatedEvent = await updateEvent({
           userId,
           event: { ...values, imageUrl: uploadedImageUrl, _id: eventId },
-          path: `/events/${eventId}`
-        })
+          path: `/events/${eventId}`,
+        });
 
-        if(updatedEvent) {
+        if (updatedEvent) {
           form.reset();
-          router.push(`/events/${updatedEvent._id}`)
+          router.push(`/events/${updatedEvent._id}`);
         }
       } catch (error) {
         console.log(error);
       }
-    } */
+    }
   }
 
   return (
@@ -360,15 +369,13 @@ const EventForm = ({ userId, type, event, eventId }: EventFormProps) => {
           />
         </div>
 
-        <Button 
+        <Button
           type="submit"
           size="lg"
           disabled={form.formState.isSubmitting}
-          className="button col-span-2 w-full"
-        >
-          {form.formState.isSubmitting ? (
-            'Submitting...'
-          ): `${type} Event `}</Button>
+          className="button col-span-2 w-full">
+          {form.formState.isSubmitting ? "Submitting..." : `${type} Event `}
+        </Button>
       </form>
     </Form>
   );

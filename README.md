@@ -22,45 +22,47 @@
 
 - **Next.js** is a React framework that enables server-side rendering (SSR), static site generation (SSG), and client-side rendering with built-in routing and webpack configuration. It's optimized for performance and SEO, making it ideal for building modern web applications.
 
-- **Node.js:** A runtime environment that allows you to execute JavaScript code server-side. It's built on Chrome's V8 JavaScript engine and is widely used for building scalable network applications, APIs, and servers.
+- **Node.js** is a runtime environment that allows you to execute JavaScript code server-side. It's built on Chrome's V8 JavaScript engine and is widely used for building scalable network applications, APIs, and servers.
 
-- **TypeScript:** A statically typed superset of JavaScript that enhances code quality and developer productivity. It provides type checking, interfaces, generics, and other advanced features that help catch errors early and improve tooling support.
+- **TypeScript** is a statically typed superset of JavaScript that enhances code quality and developer productivity. It provides type checking, interfaces, generics, and other advanced features that help catch errors early and improve tooling support.
 
-- **Zod:** 
+- **Zod** is a TypeScript-first schema validation library that focuses on developer experience, performance, and robustness. It provides an intuitive API for defining and validating data schemas, ensuring type safety and data integrity in TypeScript projects.
 
-- **Stripe:** 
+- **Stripe** is a payment processing platform that allows businesses to accept payments online securely and with ease. It provides APIs and tools for managing payment workflows, handling subscriptions, integrating with e-commerce platforms, and ensuring PCI compliance. 
 
-- **React Hook Form:** 
+- **React Hook Form** is a lightweight library for managing form state in React applications using hooks. It emphasizes performance, simplicity, and flexibility, making it easy to implement complex forms with minimal boilerplate code.
 
-- **Tailwind:** A utility-first CSS framework that provides a set of pre-designed utility classes for styling web interfaces. It allows developers to build custom designs without writing traditional CSS by composing utility classes directly in HTML elements.
+- **Tailwind** is a utility-first CSS framework that provides a set of pre-designed utility classes for styling web interfaces. It allows developers to build custom designs without writing traditional CSS by composing utility classes directly in HTML elements.
 
-- **Shadcn:** 
+- **Shadcn** is a highly customizable and extensible library, making it a great choice for building component libraries or design systems. You can easily modify the source code of Shadcn UI components to match your project's needs and design guidelines.
 
-- **Uploadthing:** 
+- **UploadThing** is the easiest way to add file uploads to your full stack TypeScript application. Many services have tried to build a "better S3", but in our opinion, none found the right compromise of ownership, flexibility and safety.
 
 ## <br/> <a name="features">📝 Features</a>
 
-👉 **Robust Authentication**: Secure and reliable user login and registration system.
+👉 **Authentication (CRUD) with Clerk:** User management through Clerk, ensuring secure and efficient authentication.
 
-👉 **Modern Home Page**: Showcases trending podcasts with a sticky podcast player for continuous listening.
+👉 **Events (CRUD):** Comprehensive functionality for creating, reading, updating, and deleting events, giving users full control over event management.
+- **Create Events:** Users can effortlessly generate new events, providing essential details such as title, date, location, and any additional information.
+- **Read Events:** Seamless access to a detailed view of all events, allowing users to explore event specifics, including descriptions, schedules, and related information.
+- **Update Events:** Empowering users to modify event details dynamically, ensuring that event information remains accurate and up-to-date.
+- **Delete Events:** A straightforward process for removing events from the system, giving administrators the ability to manage and curate the platform effectively.
+        
+👉 **Related Events:** Smartly connects events that are related and displaying on the event details page, making it more engaging for users
+    
+👉 **Organized Events:** Efficient organization of events, ensuring a structured and user-friendly display for the audience, i.e., showing events created by the user on the user profile
+    
+👉 **Search & Filter:** Empowering users with a robust search and filter system, enabling them to easily find the events that match their preferences.
+    
+👉 **New Category:** Dynamic categorization allows for the seamless addition of new event categories, keeping your platform adaptable.
+    
+👉 **Checkout and Pay with Stripe:** Smooth and secure payment transactions using Stripe, enhancing user experience during the checkout process.
+    
+👉 **Event Orders:** Comprehensive order management system, providing a clear overview of all event-related transactions.
+    
+👉 **Search Orders:** Quick and efficient search functionality for orders, facilitating easy tracking and management.
 
-👉 **Discover Podcasts Page**: Dedicated page for users to explore new and popular podcasts.
-
-👉 **Fully Functional Search**: Allows users to find podcasts easily using various search criteria.
-
-👉 **Create Podcast Page**: Enables podcast creation with text-to-audio conversion, AI image generation, and previews.
-
-👉 **Multi Voice AI Functionality**: Supports multiple AI-generated voices for dynamic podcast creation.
-
-👉 **Profile Page**: View all created podcasts with options to delete them.
-
-👉 **Podcast Details Page**: Displays detailed information about each podcast, including creator details, number of listeners, and transcript.
-
-👉 **Podcast Player**: Features backward/forward controls, as well as mute/unmute functionality for a seamless listening experience.
-
-👉 **Responsive Design**: Fully functional and visually appealing across all devices and screen sizes.
-
-and many more, including code architecture and reusability
+and many more, including code architecture and reusability.
 
 ## <br /> <a name="quick-start">🚀 Quick Start</a>
 

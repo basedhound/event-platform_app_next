@@ -98,7 +98,7 @@ npm install
 yarn install
 ```
 
-<br/>**Cloning the Repository**
+<br/>**Set Up Environment Variables**
 
 Create a new file named `.env` in the root of your project and add the following content:
 

@@ -69,12 +69,10 @@ and many more, including code architecture and reusability.
 Follow these steps to set up the project locally on your machine.
 
 **Dashboards**
-
-- https://cloud.mongodb.com
-- https://dashboard.clerk.com
-- https://uploadthing.com/dashboard
-- https://dashboard.stripe.com
-- https://platform.openai.com
+- [MongoDB](https://cloud.mongodb.com)
+- [Clerk](https://dashboard.clerk.com)
+- [Uploadthing](https://uploadthing.com/dashboard)
+- [Stripe](https://dashboard.stripe.com)
 
 <br/>**Prerequisites**
 
@@ -105,19 +103,27 @@ yarn install
 Create a new file named `.env` in the root of your project and add the following content:
 
 ```env
-# Convex
-CONVEX_DEPLOYMENT=
-NEXT_PUBLIC_CONVEX_URL=
-
 # Clerk
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
-CLERK_WEBHOOK_SECRET=
-NEXT_PUBLIC_CLERK_SIGN_IN_URL='/sign-in'
-NEXT_PUBLIC_CLERK_SIGN_UP_URL='/sign-up'
+NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
+NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
+WEBHOOK_SECRET=
 
-# OpenAI
-OPENAI_API_KEY=
+# MongoDB
+MONGODB_URI=
+
+# UploadThing
+UPLOADTHING_SECRET=
+UPLOADTHING_APP_ID=
+
+# Stripe -> https://dashboard.stripe.com/apikeys
+# Stripe Webhook -> https://stripe.com/docs/webhooks#verify-events
+NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
+STRIPE_SECRET_KEY=
+STRIPE_WEBHOOK_SECRET=
+
+NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 ```
 
 Replace the placeholder values with your actual credentials. 
@@ -133,11 +139,3 @@ yarn dev
 ```
 
 Open [`http://localhost:3000`](http://localhost:3000) in your browser to view the project.
-
-
-**Dashboards**
-
-- https://cloud.mongodb.com
-- https://dashboard.clerk.com
-- https://uploadthing.com/dashboard
-- https://dashboard.stripe.com

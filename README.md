@@ -120,7 +120,7 @@ STRIPE_WEBHOOK_SECRET=
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 ```
 
-Replace the placeholder values with your actual credentials.
+Replace the placeholder values with your actual credentials:
 - [Clerk](https://dashboard.clerk.com)
 - [MongoDB](https://cloud.mongodb.com)
 - [Stripe](https://dashboard.stripe.com)

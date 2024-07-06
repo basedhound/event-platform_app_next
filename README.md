@@ -68,12 +68,6 @@ and many more, including code architecture and reusability.
 
 Follow these steps to set up the project locally on your machine.
 
-**Dashboards**
-- [MongoDB](https://cloud.mongodb.com)
-- [Clerk](https://dashboard.clerk.com)
-- [Uploadthing](https://uploadthing.com/dashboard)
-- [Stripe](https://dashboard.stripe.com)
-
 <br/>**Prerequisites**
 
 Make sure you have the following installed on your machine:
@@ -117,16 +111,20 @@ MONGODB_URI=
 UPLOADTHING_SECRET=
 UPLOADTHING_APP_ID=
 
-# Stripe -> https://dashboard.stripe.com/apikeys
-# Stripe Webhook -> https://stripe.com/docs/webhooks#verify-events
+# Stripe
 NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY=
 STRIPE_SECRET_KEY=
 STRIPE_WEBHOOK_SECRET=
 
+# More
 NEXT_PUBLIC_SERVER_URL=http://localhost:3000
 ```
 
-Replace the placeholder values with your actual credentials. 
+Replace the placeholder values with your actual credentials.
+- [Clerk](https://dashboard.clerk.com)
+- [MongoDB](https://cloud.mongodb.com)
+- [Stripe](https://dashboard.stripe.com)
+- [Uploadthing](https://uploadthing.com/dashboard)
 
 <br/>**Running the Project**
 

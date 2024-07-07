@@ -48,9 +48,9 @@
 - **Update Events:** Empowering users to modify event details dynamically, ensuring that event information remains accurate and up-to-date.
 - **Delete Events:** A straightforward process for removing events from the system, giving administrators the ability to manage and curate the platform effectively.
         
-👉 **Related Events:** Smartly connects events that are related and displaying on the event details page, making it more engaging for users
+👉 **Related Events:** Smartly connects events that are related and displaying on the event details page, making it more engaging for users.
     
-👉 **Organized Events:** Efficient organization of events, ensuring a structured and user-friendly display for the audience, i.e., showing events created by the user on the user profile
+👉 **Organized Events:** Efficient organization of events, ensuring a structured and user-friendly display for the audience, i.e., showing events created by the user on the user profile.
     
 👉 **Search & Filter:** Empowering users with a robust search and filter system, enabling them to easily find the events that match their preferences.
     
@@ -61,8 +61,6 @@
 👉 **Event Orders:** Comprehensive order management system, providing a clear overview of all event-related transactions.
     
 👉 **Search Orders:** Quick and efficient search functionality for orders, facilitating easy tracking and management.
-
-and many more, including code architecture and reusability.
 
 ## <br /> <a name="quick-start">🚀 Quick Start</a>
 

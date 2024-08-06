@@ -1,6 +1,6 @@
 <div align="center">
     <a href="https://evently-fv.vercel.app" target="_blank">
-      <img src="public/preview.webp" alt="Project Banner">
+      <img src="public/design/preview.png" alt="Project Banner">
     </a>
   <h3 align="center">Event Platform</h3>
 </div>
@@ -20,23 +20,23 @@
 
 ##  <br /> <a name="tech-stack">⚙️ Tech Stack</a>
 
-- **Next.js** is a React framework that enables server-side rendering (SSR), static site generation (SSG), and client-side rendering with built-in routing and webpack configuration. It's optimized for performance and SEO, making it ideal for building modern web applications.
+- [**Next.js**](https://nextjs.org/docs) is a React framework that enables server-side rendering (SSR), static site generation (SSG), and client-side rendering with built-in routing and webpack configuration. It's optimized for performance and SEO, making it ideal for building modern web applications.
 
-- **Node.js** is a runtime environment that allows you to execute JavaScript code server-side. It's built on Chrome's V8 JavaScript engine and is widely used for building scalable network applications, APIs, and servers.
+- [**Node.js**](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs) is a runtime environment that allows you to execute JavaScript code server-side. It's built on Chrome's V8 JavaScript engine and is widely used for building scalable network applications, APIs, and servers.
 
-- **TypeScript** is a statically typed superset of JavaScript that enhances code quality and developer productivity. It provides type checking, interfaces, generics, and other advanced features that help catch errors early and improve tooling support.
+- [**TypeScript**](https://www.typescriptlang.org/docs/) is a statically typed superset of JavaScript that enhances code quality and developer productivity. It provides type checking, interfaces, generics, and other advanced features that help catch errors early and improve tooling support.
 
-- **Zod** is a TypeScript-first schema validation library that focuses on developer experience, performance, and robustness. It provides an intuitive API for defining and validating data schemas, ensuring type safety and data integrity in TypeScript projects.
+- [**Zod**](https://zod.dev/) is a TypeScript-first schema validation library that focuses on developer experience, performance, and robustness. It provides an intuitive API for defining and validating data schemas, ensuring type safety and data integrity in TypeScript projects.
 
-- **Stripe** is a payment processing platform that allows businesses to accept payments online securely and with ease. It provides APIs and tools for managing payment workflows, handling subscriptions, integrating with e-commerce platforms, and ensuring PCI compliance. 
+- [**Stripe**](https://docs.stripe.com/) is a payment processing platform that allows businesses to accept payments online securely and with ease. It provides APIs and tools for managing payment workflows, handling subscriptions, integrating with e-commerce platforms, and ensuring PCI compliance. 
 
-- **React Hook Form** is a lightweight library for managing form state in React applications using hooks. It emphasizes performance, simplicity, and flexibility, making it easy to implement complex forms with minimal boilerplate code.
+- [**React Hook Form**](https://react-hook-form.com/) is a lightweight library for managing form state in React applications using hooks. It emphasizes performance, simplicity, and flexibility, making it easy to implement complex forms with minimal boilerplate code.
 
-- **Tailwind** is an utility-first CSS framework that provides a set of pre-designed utility classes for styling web interfaces. It allows developers to build custom designs without writing traditional CSS by composing utility classes directly in HTML elements.
+- [**Tailwind**](https://v2.tailwindcss.com/docs) is an utility-first CSS framework that provides a set of pre-designed utility classes for styling web interfaces. It allows developers to build custom designs without writing traditional CSS by composing utility classes directly in HTML elements.
 
-- **Shadcn** is a highly customizable and extensible library, making it a great choice for building component libraries or design systems. You can easily modify the source code of Shadcn UI components to match your project's needs and design guidelines.
+- [**shadcn/ui**](https://ui.shadcn.com/docs) is a highly customizable and extensible library, making it a great choice for building component libraries or design systems. You can easily modify the source code of Shadcn UI components to match your project's needs and design guidelines.
 
-- **UploadThing** is the easiest way to add file uploads to your full stack TypeScript application. Many services have tried to build a "better S3", but in our opinion, none found the right compromise of ownership, flexibility and safety.
+- [**UploadThing**](https://docs.uploadthing.com/) is the easiest way to add file uploads to your full stack TypeScript application. Many services have tried to build a "better S3", but in our opinion, none found the right compromise of ownership, flexibility and safety.
 
 ## <br/> <a name="features">📝 Features</a>
 
